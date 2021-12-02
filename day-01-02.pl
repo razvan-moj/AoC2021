@@ -15,3 +15,5 @@ my $init = shift @sums;
 my $inc = 0;
 for my $sum ( @sums ) { $inc++ if $sum > $init ; $init = $sum ; }
 say $inc;
+
+# shamelessly stolen from https://www.perlmonks.org/?node_id=971993
