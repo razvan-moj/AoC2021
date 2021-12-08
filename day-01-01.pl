@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use experimental qw( say switch );
-my $f = 'day-01-01';
-open(FI, '<', "$f.input") or die $!;
+my $f = 'day-01';
+open(FI, '<', "$f.sample") or die $!;
 open(FO, '>', "$f.output") or die $!;
 our ($prev, $incdec, $inc);
 $inc=0; $prev = <FI>; chomp($prev);
@@ -20,3 +20,4 @@ while(<FI>) {
 close(FI);
 close(FO);
 say $inc;
+# 1752

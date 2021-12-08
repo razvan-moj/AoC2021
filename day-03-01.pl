@@ -2,7 +2,7 @@
 use experimental qw( say );
 use Tie::File;
 use List::Util qw( reduce );
-my $f = 'day-03-01.input';
+my $f = 'day-03.sample';
 tie @data, 'Tie::File', $f or die $!;
 my @a; my (@gamma, @epsilon);
 for my $l ( @data ) {
@@ -19,3 +19,4 @@ for my $l ( @a ) {
   push @epsilon, reduce { $count{$b} < $count{$a} ? $b : $a } keys %count;
 }
 say oct('0b' . join('', @gamma)) * oct('0b' . join('', @epsilon));
+# 198

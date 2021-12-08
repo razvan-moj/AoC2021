@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 use experimental qw( say );
-my $f = 'day-04-01.input';
+my $f = 'day-04.sample';
 open(FI, '<', $f) or die $!;
 my $n = <FI>; chomp($n); my @numbers = split( /,/, $n );
 use constant B => 5;
@@ -51,5 +51,5 @@ for my $drawn (@numbers) {
         }
     }
 }
-
+# 4512
 # just copied from https://github.com/domm/advent_of_code/blob/main/2021/04_1.pl, not submitted

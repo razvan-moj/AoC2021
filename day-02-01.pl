@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use experimental qw( say switch );
 use Tie::File;
-my $f = 'day-02-01.input';
+my $f = 'day-02.sample';
 tie @data, 'Tie::File', $f or die $!;
 my $h = 0; my $v = 0;
 for my $steer ( @data ) {
@@ -14,3 +14,4 @@ for my $steer ( @data ) {
 }
 $v = abs($v);
 say $h * $v;
+# 150

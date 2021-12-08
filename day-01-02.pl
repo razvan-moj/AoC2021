@@ -2,7 +2,7 @@
 use experimental qw( say );
 use Tie::File;
 use List::Util qw( sum );
-my $f = 'day-01-01.input';
+my $f = 'day-01.sample';
 tie @data, 'Tie::File', $f or die $!;
 use constant WINDOW => 3;
 my (@sums, @slide);
